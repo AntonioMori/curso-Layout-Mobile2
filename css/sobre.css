@@ -32,3 +32,32 @@
 
     margin-bottom: 1rem;
 }
+
+.sobre__imagem{
+    display:none;
+}
+
+.sobre__texto--divisao{
+    padding-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 935px) {
+    .sobre{
+        display:flex;
+    }
+
+
+    .sobre__imagem{
+        display:block;
+        width: 50%;
+        margin-left: 4rem;
+        
+    }
+
+    .sobre__texto--divisao{
+        padding-bottom: 3rem;
+        border-bottom: 1px solid var(--cinza-escuro);
+    margin-bottom: 3rem;
+    }
+}

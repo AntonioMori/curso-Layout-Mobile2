@@ -3,6 +3,8 @@
     
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .planos__titulo {
@@ -22,6 +24,15 @@
     align-items: center;
 }
 
+@media screen and (min-width: 935px) {
+    .planos__cartoes {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+
+}
 .cartao {
     display: flex;
     flex-direction: column;
@@ -83,6 +94,7 @@
 
 .cartao--start {
     color: var(--planos-cartao-start);
+    
 }
 
 .cartao--ultra {
@@ -91,6 +103,7 @@
 
 .cartao--mega {
     color: var(--planos-cartao-mega);
+   
 }
 
 .cartao__botao--start {

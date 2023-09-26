@@ -1,7 +1,7 @@
 .diferenciais {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-    
+   
 }
 
 .diferenciais__lista {
@@ -26,12 +26,42 @@ background-image: url("../img/icone-relogio.png");
 
 .diferenciais__item:nth-child(2){
 background-image: url("../img/icone-dinheiro.png");
+
 }
 
 
 .diferenciais__item:nth-child(3){
 background-image: url("../img/icone-quimica.png");
 }
+
+@media screen and (min-width: 1050px) {
+    
+    .diferenciais{
+        background-color: var(--cinza-claro);
+    }
+    .diferenciais__item:nth-child(3){
+        background-image: url("../img/icone-quimica.png");
+        align-self: flex-end;
+        }
+
+    .diferenciais__item:nth-child(2){
+        background-image: url("../img/icone-dinheiro.png");
+        order:2;
+        }
+
+    .diferenciais__lista{
+        width:auto;
+        height: 350px;
+        justify-content: space-around;
+        
+    }
+
+    
+    
+}
+
+
+
 
 .item__titulo {
     color: var(--cinza-escuro);
